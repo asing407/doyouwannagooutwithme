@@ -1,18 +1,27 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <link rel="stylesheet" href="./yes_style.css">
-        
-    </head> 
-    <body>
-        <div class="container">
-            <div >
-                <h1 class = "header_text">Yaaayyyy!!</h1>
-            </div>
+
+<head>
+    <link rel="stylesheet" href="yes_style.css">
+    <title>Yaaayyyy</title>
+</head>
+
+<body>
+    <div class="container">
+        <div>
+            <h1 class="header_text">Yaaayyyy!!</h1>
             <div class="gif_container">
                 <img src="https://media.giphy.com/media/Yz2NW6XR6EvmU4uWpa/giphy.gif" alt="Cute animated illustration">
             </div>
+            <div>
+                <h1>Can I have your Instagram handle?</h1>
+            </div>
+            <form onsubmit="return getInstagramID();">
+                <div class="phone-input-container">
+                    <input type="text" id="instagram" name="instagram" placeholder="Enter your Instagram handle?" required>
+                </div>
+                <button onclick="window.open('https://www.instagram.com/itsmeanshhhh', '_blank')" type="submit" id="submit_button" class="submit_button">Submit</button>
+            </form>
         </div>
-       
-    </body> 
+    </body>
 </html>
